@@ -226,6 +226,7 @@ menu li a {
   height: 50px;
   display: block;
   width: 110px;
+  object-fit:contain;
 }
 
 .portal menu {
