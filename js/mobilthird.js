@@ -72,7 +72,7 @@ const menuContent2 = {
            <div class="bl">
 <ul>
 <li><a href="#">ABB mobile - Mobil Bank</a></li>
-<li><a href="#">R@ndevu</a></li>
+<li><a href="#">R@ndevu</a></li> 
 <li><a href="#">Kredit ödəyin</a></li>
 <li><a href="#">Xidmətinizdəyik!</a></li>
 <li><a href="#">Cash-In ATM-i</a></li>
