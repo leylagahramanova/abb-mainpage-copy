@@ -18,7 +18,9 @@ body {
   display: none;
   z-index: 10;
 }
-
+li a:hover{
+  text-decoration:underline;
+}
 
 #first {
 
@@ -79,7 +81,23 @@ border:none;
   align-items: center;
   justify-content: space-between;
 }
-
+.showmenu2 {
+  /* position: absolute; */
+  /* top: 200px; */
+  width: 100%;
+  left: 0;
+  /* background: #f9f9f9; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+  display: flex
+;
+  flex-direction: row;
+  z-index: 100;
+  display: flex
+;
+  align-items: center;
+  justify-content: space-between;}
 .side {
   display: flex;
   align-items: center;
@@ -225,7 +243,6 @@ menu li a {
 .bank img {
   height: 50px;
   display: block;
-  width: 110px;
   object-fit:contain;
 }
 
@@ -1213,7 +1230,7 @@ footer {
   display:none;
 }
 .menu {
-  position: fixed;
+
   margin-top:7.5rem;
   top: -200%;
   z-index:99;
@@ -1269,7 +1286,6 @@ footer {
 }
 
 #third2 menu li {
-    display: flex;
     justify-content: space-between !important;
     cursor: pointer;
     position: relative;
@@ -1359,7 +1375,7 @@ footer {
   #first2 menu::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
-  .desktop-menu, .portal {
+  .desktop-menu, .portal, .head2 {
     display: none; /* Hide menu */
 }
 .mobile-menu, .porta-long {

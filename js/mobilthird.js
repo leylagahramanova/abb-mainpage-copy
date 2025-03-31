@@ -12,9 +12,9 @@ const menuItems2 = [
 
 const menuContent2 = {
     kartlar: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">Debet kartlarık</a></li>
 <li><a href="#">Adsız debet kartlar üzrə</br> rəsmiləşdirmə prosesi</a></li>
@@ -25,9 +25,9 @@ const menuContent2 = {
         </div>
  `,
     kreditler: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">Online kredit al</a></li>
 <li><a href="#">Nağd kredit</a></li>
@@ -44,9 +44,9 @@ const menuContent2 = {
         </div>
     </div>`,
     onlaynXidmetler: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">ABB mobile - Mobil Bank</a></li>
 <li><a href="#">R@ndevu</a></li>
@@ -67,9 +67,9 @@ const menuContent2 = {
         </div>
     </div>`,
     keshbek: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">ABB mobile - Mobil Bank</a></li>
 <li><a href="#">R@ndevu</a></li>
@@ -90,9 +90,9 @@ const menuContent2 = {
         </div>
     </div>`,
     emanetler: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">"Klassik" əmanəti</a></li>
 <li><a href="#">Əmanətlərin sığortalanması</a></li>
@@ -107,9 +107,9 @@ const menuContent2 = {
         </div>
     </div>`,
     pulKochurmeleri: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 <li><a href="#">Valyuta tənzimlənməsi</a></li>
 <li><a href="#">Təcili pul köçürmələri</a></li>
@@ -122,9 +122,9 @@ const menuContent2 = {
         </div>
     </div>`,
     cariHesab: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 
 <ul>
 <li><a href="#">DigiHesab Max açın</a></li>
@@ -141,9 +141,9 @@ const menuContent2 = {
         </div>
     </div>`,
     odenisler: `
-<div class="showmenu">
+<div class="showmenu2">
         <div class="side">
-           <div class="block">
+           <div class="bl">
 <ul>
 
 <li><a href="#">Telefon</a></li>
@@ -156,12 +156,14 @@ const menuContent2 = {
         </div>
     </div>`
 };
+
+
 const toggle = document.getElementsByClassName('caret');
 for (let i = 0; i < toggle.length; i++) {
     toggle[i].addEventListener('click', function () {
         const contentKey = menuItems2[i].contentKey;
         const contentDiv = document.getElementById(contentKey + 'Content');
-        
+
         // Toggle visibility
         if (contentDiv.innerHTML) {
             contentDiv.innerHTML = ''; // Clear the content
@@ -172,5 +174,8 @@ for (let i = 0; i < toggle.length; i++) {
         // Toggle caret and active class for dropdown
         this.classList.toggle('caret-down');
         contentDiv.classList.toggle("active");
+
     });
+
+
 }
