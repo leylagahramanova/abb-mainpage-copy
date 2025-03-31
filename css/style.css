@@ -1307,7 +1307,7 @@ footer {
     justify-content: flex-end;
     cursor: pointer;
     user-select: none;
-    width: 100%; /* Ensure the caret spans the entire width of the list item */
+    width: 100%; 
 }
 
 .caret::after {
@@ -1315,12 +1315,12 @@ footer {
     color: black;
     transform: rotate(90deg);
     display: inline-block;
-    margin-left: auto; /* This aligns the caret to the far right */
+    margin-left: auto; 
 }
 
 
-.caret-down::before {
-    transform: rotate(180deg);
+.caret-down::after {
+    transform: rotate(270deg);
 }
 
 .dropdown {
